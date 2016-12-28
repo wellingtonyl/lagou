@@ -259,8 +259,6 @@ head(addr_geo)
 
 作图函数如下，生成的是动态html页面，这里展示的是网页截图：
 
-![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/data_analyst_addr_2.png)
-
 ``` r
 #remapB(markPointData = data.frame(addr_geo$city),                             # 所有的地址
 #       markPointTheme = markPointControl(symbol = "pin", color = "red",       # symbol符号形状，color符号颜色
@@ -272,6 +270,7 @@ head(addr_geo)
 #       subtitle = "by Ye Ling"
 #)
 ```
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/data_analyst_addr_2.png)
 
 从图中可以看到用人单位主要集中在市区，其中有三个相对集中的区域，分别是徐汇区的漕河泾开发区，浦东的张江地区和世纪大道-浦建路周边。郊区的嘉定，青浦，松江闵行南部和宝山北部机会极少。此外，企业沿着地铁沿线分布的趋势非常明显。
 
@@ -386,7 +385,7 @@ salary_dt[, .(mean_min_sal=mean(min_sal), mean_max_slary=mean(max_sal), count=.N
 
 绘成词云：
 
-![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/wordcloud.png)
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/word cloud.png)
 
 这些词充分展示了一个数据分析师需要掌握的技能和素质。
 
