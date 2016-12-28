@@ -259,6 +259,8 @@ head(addr_geo)
 
 作图函数如下，生成的是动态html页面，这里展示的是网页截图：
 
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/data_analyst_addr_2.png)
+
 ``` r
 #remapB(markPointData = data.frame(addr_geo$city),                             # 所有的地址
 #       markPointTheme = markPointControl(symbol = "pin", color = "red",       # symbol符号形状，color符号颜色
@@ -326,7 +328,7 @@ Python在所有465家企业中得136票，占比136/465=29.2%，排名第一。R
 
 从下图可以看到有73家企业只接受Python，55家企业只接受R，另有63家企业两种语言都可以接受。总的来说，Python的受接受度更高一些。
 
-![](lagou_files/figure-markdown_github/unnamed-chunk-12-1.png)
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/venn.png)
 
 ### 薪资水平
 
@@ -344,7 +346,7 @@ table(work_years)
 
 要求经验在3-5年的公司最多，187家；其次是1-3年，164家，不限或应届或1年以下加起来61家，5-10年52家，要求十年以上的仅一家。
 
-下图展示了以工作经验分组的平均最低薪水和最高薪水。可以看到，保守而言，最低起薪在7k元左右，工作3-5年后可以翻一倍到14k元左右，5-10年后可达21k。
+下表展示了以工作经验分组的平均最低薪水和最高薪水。可以看到，保守而言，最低起薪在7k元左右，工作3-5年后可以翻一倍到14k元左右，5-10年后可达21k。
 
 ``` r
 salary_dt[, .(mean_min_sal=mean(min_sal), mean_max_slary=mean(max_sal), count=.N), by=work_years][order(mean_min_sal)]
@@ -384,11 +386,15 @@ salary_dt[, .(mean_min_sal=mean(min_sal), mean_max_slary=mean(max_sal), count=.N
 
 绘成词云：
 
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/wordcloud.png)
+
 这些词充分展示了一个数据分析师需要掌握的技能和素质。
 
 ### 企业发展阶段
 
-从下图可以看到，各个发展阶段的企业都有，没有十分集中的趋势，从B轮到D轮公司数量逐渐减少。 ![](lagou_files/figure-markdown_github/unnamed-chunk-19-1.png)
+从下图可以看到，各个发展阶段的企业都有，没有十分集中的趋势，从B轮到D轮公司数量逐渐减少。 
+
+![Alt text](https://github.com/wellingtonyl/lagou/raw/master/images/phase.png)
 
 ### 总结
 
